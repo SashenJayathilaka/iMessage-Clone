@@ -9,7 +9,10 @@ import Auth from "../components/auth/Auth";
 export default function Home() {
   const { data: session } = useSession();
 
-  const reloadedSession = () => {};
+  const reloadedSession = () => {
+    const event = new Event("visibilitychange");
+    document.dispatchEvent(event);
+  };
 
   return (
     <>
