@@ -1,8 +1,12 @@
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 type Props = {};
 
 function Chat({}: Props) {
+  const { data: session } = useSession();
+
+  console.log(session);
+
   return (
     <div>
       <div>

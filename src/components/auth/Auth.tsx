@@ -3,9 +3,10 @@ import { Button, Center, Image, Input, Stack, Text } from "@chakra-ui/react";
 import { Session } from "next-auth";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
 
-import { CreateUserData, CreateUsernameVariables } from "../../util/types";
 import UserOperation from "../../graphql/operations/user";
+import { CreateUserData, CreateUsernameVariables } from "../../util/types";
 
 type Props = {
   session: Session | null;
@@ -15,7 +16,7 @@ type Props = {
 function Auth({ session, reloadedSession }: Props) {
   const [username, setUsername] = useState("");
 
-  const [createUsername, { data, loading, error }] = useMutation<
+  const [createUsername, { loading, error }] = useMutation<
     CreateUserData,
     CreateUsernameVariables
   >(UserOperation.Mutations.createUsername);
@@ -24,9 +25,27 @@ function Auth({ session, reloadedSession }: Props) {
     if (!username) return;
 
     try {
-      await createUsername({ variables: { username } });
-    } catch (error) {
-      console.log("onSubmit", error);
+      const { data } = await createUsername({ variables: { username } });
+
+      if (!data?.createUsername) {
+        throw new Error();
+      }
+
+      if (data.createUsername.error) {
+        const {
+          createUsername: { error },
+        } = data;
+
+        throw new Error(error);
+      }
+
+      toast.success("Username Successfully Created");
+
+      // Reload the session to obtain new username
+      reloadedSession();
+    } catch (error: any) {
+      toast.error(error.message);
+      console.log("onSubmit", error.message);
     }
   };
 
@@ -47,8 +66,12 @@ function Auth({ session, reloadedSession }: Props) {
           </>
         ) : (
           <>
+            <Image
+              height="200px"
+              src="https://drive.google.com/uc?id=1AjomAgj4yxhOd1R0otMEo65f7lPzr2rh"
+            />
             <Text fontSize="3xl" textAlign="center">
-              Messenger
+              iMessenger
             </Text>
             <Button
               onClick={() => signIn("google")}
