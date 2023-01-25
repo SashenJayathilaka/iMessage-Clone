@@ -60,14 +60,14 @@ function Auth({ session, reloadedSession }: Props) {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <Button width="100%" onClick={onSubmit}>
+            <Button isLoading={loading} width="100%" onClick={onSubmit}>
               Save
             </Button>
           </>
         ) : (
           <>
             <Image
-              height="200px"
+              height="160px"
               src="https://drive.google.com/uc?id=1AjomAgj4yxhOd1R0otMEo65f7lPzr2rh"
             />
             <Text fontSize="3xl" textAlign="center">
