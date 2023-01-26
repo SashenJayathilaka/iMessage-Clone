@@ -55,7 +55,11 @@ Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma
 ### :camera: Screenshots
 
 <div align="center">
-<a href=""><img width='800rem' src='./demo/demoOne.gif' alt='image'/><img width='800rem' src='./demo/demoTwo.gif' alt='image'/><img width='800rem' src='./demo/demoThree.gif' alt='image'/><img width='800rem' src='./demo/demoFour.gif' alt='image'/><img width='800rem' src='./demo/demoFive.gif' alt='image'/></a>
+<a href=""><img width='800' src='./demo/demoOne.gif' alt='image'/></a>
+<a href=""><img width='800' src='./demo/demoTwo.gif' alt='image'/></a>
+<a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
+<a href=""><img width='800' src='./demo/demoFour.gif' alt='image'/></a>
+<a href=""><img width='800' src='./demo/demoFive.gif' alt='image'/></a>
 </div>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
