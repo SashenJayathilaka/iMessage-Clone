@@ -1,5 +1,6 @@
 import { GraphQLError } from "graphql";
 import { User } from "@prisma/client";
+
 import { CreateUsernameResponse, GraphQLContext } from "../../util/types";
 
 const resolvers = {
@@ -32,7 +33,7 @@ const resolvers = {
         });
         return users;
       } catch (error: any) {
-        console.log("Search error: ", error);
+        console.log("search error: ", error);
         throw new GraphQLError(error?.message);
       }
     },
@@ -62,7 +63,7 @@ const resolvers = {
         });
         if (existingUser) {
           return {
-            error: "Username already taken. Try another",
+            error: "Username Already Taken. Try another",
           };
         }
         await prisma.user.update({
@@ -77,7 +78,7 @@ const resolvers = {
           success: true,
         };
       } catch (error: any) {
-        console.log("Create username error: ", error);
+        console.log("create username error: ", error);
         return {
           error: error.message,
         };

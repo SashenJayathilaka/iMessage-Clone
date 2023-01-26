@@ -1,6 +1,7 @@
 import { Prisma } from "@prisma/client";
 import { GraphQLError } from "graphql";
 import { withFilter } from "graphql-subscriptions";
+
 import { userIsConversationParticipant } from "../../util/functions";
 import {
   GraphQLContext,
@@ -108,7 +109,7 @@ const resolvers = {
               updateMany: {
                 where: {
                   NOT: {
-                    userId: senderId,
+                    userId: userId,
                   },
                 },
                 data: {
