@@ -1,6 +1,7 @@
 import { Prisma } from "@prisma/client";
 import { GraphQLError } from "graphql";
 import { withFilter } from "graphql-subscriptions";
+
 import { userIsConversationParticipant } from "../../util/functions";
 import {
   ConversationDeletedSubscriptionPayload,
@@ -77,7 +78,7 @@ const resolvers = {
         };
       } catch (error: any) {
         console.error("createConversation error: ", error);
-        throw new GraphQLError("Error creating conversation");
+        throw new GraphQLError("Error Creating Conversation");
       }
     },
     markConversationAsRead: async (

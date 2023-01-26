@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 
 import { theme } from "../chakra/theme";
 import { client } from "../graphql/apollo-client";
+import "../styles/globals.css";
 
 export default function App({
   Component,
