@@ -6,8 +6,8 @@ import React from "react";
 import { MessagePopulated } from "../../../../../../backend/src/util/types";
 
 const formatRelativeLocale = {
-  lastWeek: "eeee 'at' P",
-  yesterday: "''Yesterday at' P",
+  lastWeek: "eeee 'at' p",
+  yesterday: "'Yersterday at' p",
   today: "p",
   other: "MM/dd/yy",
 };
