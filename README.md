@@ -11,7 +11,6 @@ Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma
   
 <!-- Badges -->
 
-<a href="" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
 ![](https://img.shields.io/github/forks/SashenJayathilaka/iMessage-Clone.svg)
 ![](https://img.shields.io/github/stars/SashenJayathilaka/iMessage-Clone.svg)
