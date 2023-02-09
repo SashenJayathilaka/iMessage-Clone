@@ -53,12 +53,42 @@ Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma
 
 ### :camera: Screenshots
 
+- Google Authentication using Next Auth
+
 <div align="center">
 <a href=""><img width='800' src='./demo/demoOne.gif' alt='image'/></a>
-<a href=""><img width='800' src='./demo/demoTwo.gif' alt='image'/></a>
-<a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
-<a href=""><img width='800' src='./demo/demoFour.gif' alt='image'/></a>
-<a href=""><img width='800' src='./demo/demoFive.gif' alt='image'/></a>
+</div>
+
+<br />
+
+- Searching & Creating chat conversation
+
+<div align="center">
+  <a href=""><img width='800' src='./demo/demoTwo.gif' alt='image'/></a>
+</div>
+
+<br />
+
+- 1-1 Messaging, Real Time Messaging & joining chat conversation
+
+<div align="center">
+  <a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
+</div>
+
+<br />
+
+- 1-1 Messaging, Real Time Messaging & joining chat conversation
+
+<div align="center">
+  <a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
+</div>
+
+<br />
+
+- Leaving chat conversation
+
+<div align="center">
+  <a href=""><img width='800' src='./demo/demoFive.gif' alt='image'/></a>
 </div>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
