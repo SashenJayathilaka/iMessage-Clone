@@ -194,8 +194,6 @@ In your Next.js project, install Chakra UI by running either of the following:
 
 ```bash
 npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
-or
-yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
 ```
 
 Provider Setup
