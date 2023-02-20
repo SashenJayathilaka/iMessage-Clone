@@ -49,47 +49,6 @@ Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma
 
 ## :star2: About the Project
 
-<!-- Screenshots -->
-
-### :camera: Screenshots
-
-- Google Authentication using Next Auth
-
-<div align="center">
-<a href=""><img width='800' src='./demo/demoOne.gif' alt='image'/></a>
-</div>
-
-<br />
-
-- Searching & Creating chat conversation
-
-<div align="center">
-  <a href=""><img width='800' src='./demo/demoTwo.gif' alt='image'/></a>
-</div>
-
-<br />
-
-- 1-1 Messaging, Real Time Messaging & joining chat conversation
-
-<div align="center">
-  <a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
-</div>
-
-<br />
-
-- 1-1 Messaging, Real Time Messaging & joining chat conversation
-
-<div align="center">
-  <a href=""><img width='800' src='./demo/demoThree.gif' alt='image'/></a>
-</div>
-
-<br />
-
-- Leaving chat conversation
-
-<div align="center">
-  <a href=""><img width='800' src='./demo/demoFive.gif' alt='image'/></a>
-</div>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
