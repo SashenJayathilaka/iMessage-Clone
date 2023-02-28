@@ -5,7 +5,7 @@
   <h1>iMessage Clone</h1>
 
   <p>
-Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma, TypeScript, NextAuth.js, Google Authentication, Chakra UI, (1-1 Messaging, Real Time Messaging, Creating Chat conversation, Joining Chat Conversation, Leaving Chat Conversation)
+Realtime Chat App (iMessage Clone) with NextJS, GraphQL, NodeJS, MongoDB, Prisma, TypeScript, NextAuth.js, Google Authentication, Chakra UI, (1-1 Messaging, Real Time Messaging, Creating Chat conversation, Joining Chat Conversation, Leaving Chat conversation)
   </p>
   
   
